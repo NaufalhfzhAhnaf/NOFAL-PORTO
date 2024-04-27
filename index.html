@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio || Naufal hafizh ahnaf</title>
+<!-- ini buat font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- ini buat font -->
+<!-- ini buat style -->
+<style>
+  /* Reset CSS */
+  body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* Menyusun elemen secara horizontal dan memberikan ruang kosong di antara */
+  align-items: center; /* Pusatkan elemen secara vertikal */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px; /* Jarak antar item */
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffc107;
+}
+
+.jumbotron {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #007bff;
+  color: white;
+}
+
+.jumbotron img{ 
+  border-radius:50%;
+}
+.kepala {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill {
+  background-color: #007bff;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skill img {
+  margin: 10px;
+}
+
+.badan {
+  background-color: #333;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.masuk {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, input, textarea {
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffca28;
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Styling for desktop */
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  header nav ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    margin-right: 20px;
+  }
+
+  .jumbotron {
+    padding: 100px 0;
+  }
+
+  .kepala {
+    padding: 100px 0;
+  }
+
+  .about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .skill {
+    padding: 100px 0;
+  }
+
+  .masuk {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Styling for mobile */
+@media only screen and (max-width: 767px) {
+  header {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  header nav ul {
+    display: block;
+    margin-top: 20px;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .jumbotron {
+    padding: 50px 0;
+  }
+
+  .kepala {
+    padding: 50px 0;
+  }
+
+  .about,
+  .skill,
+  .badan {
+    padding: 30px 0;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .skill img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .masuk {
+    padding: 20px;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
+
+/* Keyframes untuk efek mengetik */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Keyframes untuk efek mengetik */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Keyframes untuk efek cursor berkedip */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Keyframes untuk efek mengetik */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Keyframes untuk efek cursor berkedip */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Styling untuk teks yang sedang mengetik */
+.typing-text {
+  overflow: hidden; /* Membuat teks yang melebihi lebar kotak terpotong */
+  border-right: .15em solid orange; /* Efek cursor berkedip */
+  white-space: nowrap; /* Membuat teks tidak melipat jika lebih panjang dari lebar kotak */
+  margin: 0 auto; /* Memposisikan teks di tengah */
+  font-size: 1.5em; /* Ukuran teks */
+  animation: typing 3s steps(40, end) infinite, blink-caret .75s step-end infinite; /* Menggunakan animasi typing dan blink-caret */
+}
+
+/* Responsif untuk teks yang sedang mengetik */
+@media only screen and (max-width: 767px) {
+  .typing-text {
+    font-size: 1.2em; /* Ukuran teks pada layar kecil */
+  }
+}
+
+
+
+</style>
+<!-- ini buat style -->
+<!-- ini buat script -->
+<script>
+  function showThankYouMessage() {
+    document.getElementById('form').style.display = 'none';
+    document.getElementById('thank-you-message').style.display = 'block';
+  }
+  function scrollToSection(id) {
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+</script>
+<!-- ini buat script -->
+</head>
+<body>
+<!-- header -->
+<header>
+<div class="container">
+  <p>Naufal hafizh ahnaf</p>
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0);" onclick="scrollToSection('about')">About me</a></li>
+      <li><a href="javascript:void(0);" onclick="scrollToSection('skill')">Skill</a></li>
+      <li><a href="javascript:void(0);" onclick="scrollToSection('kontak')">Contact me</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+<!-- header -->
+<!-- jumbotron -->
+<div class="jumbotron">
+  <img src="/WEB NAUFAL/assets/profile.jpg" alt="naufal-hafizh-ahnaf" width="200">
+  <h2>NAUFAL HAFIZH AHNAF</h2>
+  <p class="typing-text">Front-End Developer || Universitas Gunadarma</p>
+</div>
+
+<!-- jumbotron -->
+<!-- konten -->
+<div class="kepala" id="about">
+<div class="about">
+  <h1>About Me</h1>
+  <p>Halo, Nama saya naufal hafizh ahnaf saya kelahiran Klaten Tahun 2005, saat ini saya sedang menjalankan pendidikan S1 Jurusan Informatika dan cita-cita saya adalah untuk menjadi Front-end Developer, dan ini adalah web pertama buatan saya hasil belajar dari Dicoding.com, dan seterusnya saya akan lebih berkembang dengan belajar bahasa pemrograman lainnya seperti JavaScript, Python, Php dan yang lainnya</p>
+</div>
+</div>
+<div class="skill">
+<h1 id="skill">Skill</h1>
+<p>Bahasa Pemrograman yang dikuasai</p>
+<img src="/WEB NAUFAL/assets/html.jpg" alt="" class="satu">
+<img src="/WEB NAUFAL/assets/css.jpg" alt="">
+<img src="/WEB NAUFAL/assets/js.jpg" alt="">
+<img src="/WEB NAUFAL/assets/py.jpg" alt="">
+</div>
+<!-- konten -->
+<!-- footer -->
+<div class="badan">
+<h1 id="kontak">Berikan pendapat tentang Web saya</h1>
+<div class="masuk" id="form">
+  <form action="/html/halamandua.html" onsubmit="showThankYouMessage(); return false;">
+    <label for="email">Email</label>
+    <input type="email" name="" id="" placeholder="Masukan email anda" required>
+    <br>
+    <input type="text" placeholder="Masukan masukan anda" required>
+    <br>
+    <input type="submit" value="submit">
+  </form>
+</div>
+<div id="thank-you-message" style="display: none;">
+  <h2>Terima kasih!</h2>
+  <p>Pesan Anda telah terkirim.</p>
+</div>
+<!-- footer -->
+</body>
+</html>
